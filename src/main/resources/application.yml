@@ -1,0 +1,19 @@
+server:
+  port: 9090
+  servlet:
+    context-path: /consoles/cron
+    path: /*
+  tomcat:
+    additional-tld-skip-patterns: "*.jar"
+
+jsf:
+  primefaces:
+    theme: afterdark
+
+spring:
+  profiles:
+    active: local
+  datasource:
+    jndi-name: java:/ORACLE_DS
+
+com.tradyso.entorno: LOCAL
